@@ -51,7 +51,7 @@ do{
             multiplicacao(num1,num2)
             break
         case("4"):
-
+            divisao(num1,num2)
             break
         default:
             console.log("Isso não deveria ocorrer...")
@@ -75,4 +75,10 @@ do{
         console.log("\n--Multiplicação--\n")
         let resultado = num1 * num2
         console.log(`O resultado de: ${num1} * ${num2} é igual ${resultado}`)
+    }
+
+    function divisao(num1, num2){
+        console.log("\n--Divisão--\n")
+        let resultado = num1 / num2
+        console.log(`O resultado de: ${num1} / ${num2} é igual ${resultado}`)
     }
