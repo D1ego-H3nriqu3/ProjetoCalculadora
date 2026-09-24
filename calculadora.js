@@ -48,7 +48,7 @@ do{
             subtracao(num1,num2)
             break
         case("3"):
-
+            multiplicacao(num1,num2)
             break
         case("4"):
 
@@ -69,4 +69,10 @@ do{
         console.log("\n--Subtração--\n")
         let resultado = num1 - num2
         console.log(`O resultado de: ${num1} - ${num2} é igual ${resultado}`)
+    }
+
+    function multiplicacao(num1, num2){
+        console.log("\n--Multiplicação--\n")
+        let resultado = num1 * num2
+        console.log(`O resultado de: ${num1} * ${num2} é igual ${resultado}`)
     }
