@@ -25,7 +25,7 @@ do{
             numerosOperacoes(resposta)
             break
         case("0"):
-
+            sairSistema()
             break
         default:
             console.log("\nDigite uma opção correspondente;")
@@ -81,4 +81,9 @@ do{
         console.log("\n--Divisão--\n")
         let resultado = num1 / num2
         console.log(`O resultado de: ${num1} / ${num2} é igual ${resultado}`)
+    }
+
+    function sairSistema(){
+        console.log("\n...Saindo do sistema...\n")
+        indice = false
     }
