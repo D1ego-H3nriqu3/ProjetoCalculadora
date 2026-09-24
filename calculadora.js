@@ -13,16 +13,16 @@ do{
     let resposta = (prompt("Escolha uma opção: ")).trim()
     switch(resposta){
         case("1"):
-            numerosOperacoes()
+            numerosOperacoes(resposta)
             break
         case("2"):
-            numerosOperacoes()
+            numerosOperacoes(resposta)
             break
         case("3"):
-            numerosOperacoes()
+            numerosOperacoes(resposta)
             break
         case("4"):
-            numerosOperacoes()
+            numerosOperacoes(resposta)
             break
         case("0"):
 
@@ -38,11 +38,11 @@ do{
         let num2 = Number(prompt("Agora, informe o segundo número da operação: "))
         if(isNaN(num1) || isNaN(num2)){
             console.log("\nDigite apenas NÚMEROS!")
-            numerosOperacoes()
+            numerosOperacoes(resposta)
         }else{
             switch(resposta){
         case("1"):
-
+            soma(num1,num2)
             break
         case("2"):
 
@@ -57,4 +57,10 @@ do{
             console.log("Isso não deveria ocorrer...")
             }
         }
+    }
+
+    function soma(num1, num2){
+        console.log("\n--Soma--\n")
+        let resultado = num1 + num2
+        console.log(`O resultado de: ${num1} + ${num2} é igual ${resultado}`)
     }
