@@ -54,7 +54,7 @@ do{
             divisao(num1,num2)
             break
         default:
-            console.log("Isso não deveria ocorrer...")
+            console.log("\nIsso não deveria ocorrer...\n")
             }
         }
     }
@@ -79,8 +79,12 @@ do{
 
     function divisao(num1, num2){
         console.log("\n--Divisão--\n")
+        if(num1 === 0 || num2 === 0){
+            console.log("Divisão por zero não é permitida!")
+        }else{
         let resultado = num1 / num2
         console.log(`O resultado de: ${num1} / ${num2} é igual ${resultado}`)
+        }
     }
 
     function sairSistema(){
