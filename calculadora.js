@@ -79,7 +79,7 @@ do{
 
     function divisao(num1, num2){
         console.log("\n--Divisão--\n")
-        if(num1 === 0 || num2 === 0){
+        if(num2 === 0){
             console.log("Divisão por zero não é permitida!")
         }else{
         let resultado = num1 / num2
