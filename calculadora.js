@@ -45,7 +45,7 @@ do{
             soma(num1,num2)
             break
         case("2"):
-
+            subtracao(num1,num2)
             break
         case("3"):
 
@@ -63,4 +63,10 @@ do{
         console.log("\n--Soma--\n")
         let resultado = num1 + num2
         console.log(`O resultado de: ${num1} + ${num2} é igual ${resultado}`)
+    }
+
+    function subtracao(num1, num2){
+        console.log("\n--Subtração--\n")
+        let resultado = num1 - num2
+        console.log(`O resultado de: ${num1} - ${num2} é igual ${resultado}`)
     }
